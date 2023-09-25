@@ -21,6 +21,9 @@
 #include "vgui_TeamFortressViewport.h"
 #include "filesystem_utils.h"
 
+#define KEY_ONE 1
+#define KEY_TWO 2
+
 
 extern bool g_iAlive;
 
@@ -311,10 +314,9 @@ void KeyDown(kbutton_t* b)
 		return;
 	}
 
-	//TODO: define constants
-	if ((b->state & 1) != 0)
+	if ((b->state & KEY_ONE) != NULL)
 		return;		   // still down
-	b->state |= 1 + 2; // down + impulse down
+	b->state |= KEY_ONE + KEY_TWO; // down + impulse down
 }
 
 /*
