@@ -62,7 +62,7 @@ void CHudStatusBar::Reset()
 	m_iFlags &= ~HUD_ACTIVE; // start out inactive
 	for (i = 0; i < MAX_STATUSBAR_LINES; i++)
 		m_szStatusText[i][0] = 0;
-	memset(m_iStatusValues, 0, sizeof m_iStatusValues);
+	memset(m_iStatusValues, 0, sizeof(m_iStatusValues));
 
 	m_iStatusValues[0] = 1; // 0 is the special index, which always returns true
 

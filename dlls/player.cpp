@@ -3154,9 +3154,7 @@ void CBasePlayer::SelectItem(int iId)
 //==============================================
 bool CBasePlayer::HasWeapons()
 {
-	int i;
-
-	for (i = 0; i < MAX_ITEM_TYPES; i++)
+	for (int i = 0; i < MAX_ITEM_TYPES; i++)
 	{
 		if (m_rgpPlayerItems[i])
 		{

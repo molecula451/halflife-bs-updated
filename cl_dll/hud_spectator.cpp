@@ -883,7 +883,7 @@ void CHudSpectator::FindNextPlayer(bool bReverse)
 	int iStart;
 	cl_entity_t* pEnt = NULL;
 
-	// if we are NOT in HLTV mode, spectator targets are set on server
+	// if we are NOT in  mode, spectator targets are set on server
 	if (0 == gEngfuncs.IsSpectateOnly())
 	{
 		char cmdstring[32];
@@ -955,7 +955,7 @@ void CHudSpectator::FindPlayer(const char* name)
 	// MOD AUTHORS: Modify the logic of this function if you want to restrict the observer to watching
 	//				only a subset of the players. e.g. Make it check the target's team.
 
-	// if we are NOT in HLTV mode, spectator targets are set on server
+	// if we are NOT in  mode, spectator targets are set on server
 	if (0 == gEngfuncs.IsSpectateOnly())
 	{
 		char cmdstring[32];
