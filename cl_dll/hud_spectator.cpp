@@ -883,7 +883,7 @@ void CHudSpectator::FindNextPlayer(bool bReverse)
 	int iStart;
 	cl_entity_t* pEnt = NULL;
 
-	// if we are NOT in  mode, spectator targets are set on server
+	// if we are NOT HLTV in mode, spectator targets are set on server
 	if (0 == gEngfuncs.IsSpectateOnly())
 	{
 		char cmdstring[32];
