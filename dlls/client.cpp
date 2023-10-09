@@ -171,7 +171,7 @@ void ClientKill(edict_t* pEntity)
 	CBasePlayer* pl = (CBasePlayer*)CBasePlayer::Instance(pev);
 
 	if (pl->m_fNextSuicideTime > gpGlobals->time)
-		return; // prevent suiciding too ofter
+		return; // prevent suiciding too often
 
 	pl->m_fNextSuicideTime = gpGlobals->time + 1; // don't let them suicide for 5 seconds after suiciding
 
